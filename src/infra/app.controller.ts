@@ -1,5 +1,4 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { notification } from '@prisma/client';
 import { randomUUID } from 'node:crypto';
 import { CreateNotification } from './create-notification';
 import { PrismaService } from './prisma.service';
@@ -26,10 +25,6 @@ export class AppController {
       },
     });
   }
-
-  // app.post('/' (req, res) => {
-  //   const {content, category, recipiendId} = req.body
-  // })
 
   @Get('/secret')
   getSecret(): string {
