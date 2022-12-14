@@ -2,9 +2,9 @@ export class Content {
   private readonly content: string;
 
   constructor(content: string) {
-    const isContenLengthValid = this.validateContentLength(content);
+    const isContentLengthValid = this.validateContentLength(content);
 
-    if (!isContenLengthValid) throw new Error('content length erro');
+    if (!isContentLengthValid) throw new Error('content length erro');
 
     this.content = content;
   }

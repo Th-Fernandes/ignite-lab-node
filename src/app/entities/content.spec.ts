@@ -14,7 +14,7 @@ describe('notification content', () => {
   });
 
   test('it should not be able to create a notification content greater than 340 characters', () => {
-    const content = () => new Content('1'.repeat(340));
+    const content = () => new Content('1'.repeat(345));
 
     expect(content).toThrowError();
   });
