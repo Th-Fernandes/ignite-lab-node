@@ -10,7 +10,7 @@ export class Content {
   }
 
   private validateContentLength(content: string): boolean {
-    return content.length >= 5 && content.length > 340;
+    return content.length >= 5 && content.length < 340;
   }
 
   get value() {
